@@ -1,0 +1,44 @@
+body {
+  /* background-color: black; */
+  background-image: linear-gradient(-45deg, #001a58 0%, #940062 50%, #007aad 100%);
+  color: white;
+  font-family: monospace;
+}
+
+::selection {
+  background-color: #fff;
+  color: black;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+p {
+  font-size: 14px;
+}
+
+/* link */
+a {
+  color: #cc311d;
+}
+
+
+/* hover over link */
+a:hover {
+  background-color:white;
+  color:black;
+}
+
+mark {
+  background-color: black;
+  color: white;
+}
+
+img {
+  max-width:100%
+}
