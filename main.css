@@ -5,22 +5,17 @@ body {
 }
 
 ::selection {
-  background-color: white;
+  background-color: #fff;
   color: black;
 }
 
 /* link */
 a {
-  color: white;
+  color: #fff;
 }
 
 /* hover over link */
 a:hover {
-  background-color:white;
-  color:black;
-}
-
-/* visited link */
-a:visited {
-  color:white;
+  color: #000;
+  background-color: #fff;
 }
