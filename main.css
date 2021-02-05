@@ -14,9 +14,13 @@ a {
   color: white;
 }
 
-
 /* hover over link */
 a:hover {
   background-color:white;
   color:black;
+}
+
+/* visited link */
+a:visited {
+  color:white;
 }
