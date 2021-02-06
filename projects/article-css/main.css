@@ -10,14 +10,6 @@ body {
   color: black;
 }
 
-h1 {
-
-}
-
-h2 {
-
-}
-
 p {
   font-size: 14px;
 }
@@ -40,5 +32,38 @@ mark {
 }
 
 img {
-  max-width:100%
+  max-width:100%;
+}
+
+.wrapper {
+  /* just in case */
+}
+
+.main {
+  margin-left: 250px;
+  margin-right: 10px;
+  padding: 20px;
+  /* min-width: 35%; */
+}
+
+.sidebar {
+  width: 160px;
+  margin-left:20px;
+  /* min-width:20%; */
+  /* position: -webkit-sticky; */
+  /* position: sticky; */
+  position: fixed;
+  top: 20px;
+  padding: 30px;
+  overflow-x: hidden;
+  z-index: 1; /*stay on top*/
+  background: black;
+}
+
+.sidebar a {
+
+}
+
+.sidebar a:hover {
+
 }
