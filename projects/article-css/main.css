@@ -91,7 +91,7 @@ hr.line1 {
   padding: 30px 40px 40px 40px;
   overflow: auto;
   /* background: black; */
-  background-image: linear-gradient(180deg, #001a58 0%, #940062 50%, #007aad 100%);
+  background: radial-gradient(circle at top left, rgba(0,0,0,1) 10%, rgba(0,26,88,1) 50%, rgba(148,0,98,1) 80%, rgba(0,122,173,1) 100%);
 }
 
 .sidebar-content {
