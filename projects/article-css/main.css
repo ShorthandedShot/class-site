@@ -44,7 +44,6 @@ a {
   text-decoration: underline dotted 1px;
 }
 
-
 /* hover over link */
 a:hover {
   background-color:white;
@@ -62,10 +61,10 @@ img {
   border-bottom: 4px solid white;
   border-radius: 30px;
   display: block;
-  margin: 30px auto 30px auto;
+  margin: 20px auto 30px auto;
 }
 
-/* Gradient transparent - color - transparent */
+/*transparent ends */
 hr.line1 {
     border: 0;
     height: 2px;
@@ -73,6 +72,7 @@ hr.line1 {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
 
+/*part outside of sidebar*/
 .main {
   margin-left: 360px;
   margin-right: 10px;
@@ -87,9 +87,8 @@ hr.line1 {
   margin: 0px 30px 30px -10px;
   position: fixed;
   top: 0px;
-  padding: 40px 40px 40px 40px;
+  padding: 30px 40px 40px 40px;
   overflow: auto;
-  z-index:1; /*stay on top*/
   /* background: black; */
   background-image: linear-gradient(180deg, #001a58 0%, #940062 50%, #007aad 100%);
 }
@@ -105,11 +104,8 @@ hr.line1 {
   margin: 10px auto 10px auto;
   border-radius:30px;
   padding: 20px 10px 20px 10px;
-  /* color: #8DFFFF; */
   border-top: 4px solid white;
   border-bottom: 4px solid white;
-  /* border-top: 2px solid white; */
-  /* background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); */
   color: #fff;
   overflow:auto;
 }
