@@ -58,8 +58,9 @@ mark {
 
 img {
   max-width:100%;
+  border-top: 4px solid white;
   border-bottom: 4px solid white;
-  border-radius: 30px;
+  border-radius: 90px 30px 90px 30px;
   display: block;
   margin: 20px auto 30px auto;
 }
@@ -126,7 +127,9 @@ hr.line1 {
 .answer {
   background: #fff;
   margin: 30px auto 30px 200px;
-  border-radius:30px;
+  /* border-radius:30px; */
+  border-radius: 30px;
+
   padding: 15px 30px 15px 30px;
   border-bottom: 4px solid black;
   /* color: #ff66b3; */
