@@ -88,8 +88,9 @@ hr.line1 {
   margin: 0px 30px 30px -10px;
   position: fixed;
   top: 0px;
-  padding: 30px 40px 40px 40px;
-  overflow: auto;
+  bottom: 0px;
+  padding: 20px 40px 40px 40px;
+  overflow: scroll;
   /* background: black; */
   background: radial-gradient(circle at top left, rgba(0,0,0,1) 10%, rgba(0,26,88,1) 50%, rgba(148,0,98,1) 80%, rgba(0,122,173,1) 100%);
 }
@@ -98,6 +99,7 @@ hr.line1 {
   font-size: 14px;
   text-align: center;
   overflow: auto;
+  margin: auto;
 }
 
 .section {
@@ -108,7 +110,7 @@ hr.line1 {
   border-top: 4px solid white;
   border-bottom: 4px solid white;
   color: #fff;
-  overflow:auto;
+  overflow: auto;
 }
 
 .question {
