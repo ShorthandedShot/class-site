@@ -1,0 +1,47 @@
+p {
+  color:green;
+  background:orange;
+  font-size:40px;
+  border: 10px dashed black;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 40px;
+  /* width:650px; */
+  overflow-y: scroll;
+  transition: background-color .2s ease;
+}
+
+p:hover {
+  background: gray;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color:lightgreen;
+}
+
+a:hover {
+  color:red
+}
+
+ul {
+  list-style: upper-roman;
+}
+
+.new {
+  color: rgb(0, 50, 150);
+  /* font-style: italic; */
+  line-height: 90%;
+  text-align: center;
+  font-family: serif;
+}
+
+.large-text {
+  font-size: 90px;
+}
+
+/* padding and margin is top right bottom left */
