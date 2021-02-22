@@ -1,3 +1,182 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  margin:0;
+  padding: 20px;
+  background: white;
+  cursor: crosshair;
+}
+
+img {
+  max-width:100%;
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+  width: auto;
+  height: 100vh;
+  padding: 0px;
+  float: none;
+  background-color: transparent;
+  font-family: 'Courier Prime', monospace;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  background-clip: border-box;
+}
+
+.folder {
+  position: absolute;
+  left: 6%;
+  top: 15%;
+  right: auto;
+  bottom: auto;
+  overflow: hidden;
+  width: 430px;
+  height: 430px;
+}
+
+.folder.image {
+  left: auto;
+  top: auto;
+  right: 8%;
+  bottom: 20%;
+  width: 430px;
+  height: 430px;
+}
+
+.folder.image.jpeg {
+  display: none;
+}
+
+.folder.image.jpeg.drag {
+  display: none;
+  height: 430px;
+}
+
+.folder.drag {
+  height: auto;
+  cursor: move;
+}
+
+.folder.drag:active {
+  z-index: 5;
+}
+
+.header {
+  position: fixed;
+  z-index: 99999;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.topleft-link {
+  margin-left: 10px;
+  font-family: 'Playfair Display', serif;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: none;
+  text-decoration:none;
+}
+
+.time {
+  margin-right: 10px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-style: italic;
+  color: black;
+  font-size: 1.5rem
+}
+
+.top-bar {
+  position: relative;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom: auto;
+  z-index: auto;
+  display: flex;
+  width: 100%;
+  height: 7%;
+  background-color: #fff;
+}
+
+.address  {
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: auto;
+  flex: 1;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+}
+
+.notepad {
+  overflow: scroll;
+  height: auto;
+  width: 100%;
+  padding: 10px;
+}
+
+.paragraph {
+  display: block;
+  overflow: visible;
+  font-family: 'Courier Prime', monospace;
+  font-weight: 400;
+  font-size: .9rem;
+}
+
+.paragraph-3 {
+  position: relative;
+  left: 10px;
+  right: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.black {
+  width: 15%;
+  flex: 0 auto;
+  border-bottom: 1px solid #000;
+  cursor: grab;
+}
+
+.white {
+  display: flex;
+  width: 15%;
+  justify-content: center;
+  align-items: center;
+  border-style: none solid solid;
+  border-width: 1px;
+  border-color: #000;
+  background-color: #fff;
+}
+
+.image {
+  width: auto;
+  height: auto;
+}
+
+.text-block {
+  font-weight: 400;
+}
+
+.close {
+  display: block;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
