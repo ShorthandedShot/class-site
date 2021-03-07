@@ -85,6 +85,21 @@ hr.line1 {
   /* min-width: 35%; */
 }
 
+body::-webkit-scrollbar {
+    /* display: none; */
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  background: radial-gradient(circle at top left, rgba(0,0,0,1) 10%, rgba(0,26,88,1) 50%, rgba(148,0,98,1) 80%, rgba(0,122,173,1) 100%);
+}
+
+body::-webkit-scrollbar-thumb {
+  /* background-color: rgba(148,0,98,1); */
+  background: white;
+  border-radius: 20px;
+}
+
 .sidebar {
   width: 340px;
   height: 100%;
@@ -96,6 +111,18 @@ hr.line1 {
   overflow-y: scroll;
   /* background: black; */
   background: radial-gradient(circle at top left, rgba(0,0,0,1) 10%, rgba(0,26,88,1) 50%, rgba(148,0,98,1) 80%, rgba(0,122,173,1) 100%);
+}
+
+.sidebar::-webkit-scrollbar {
+    /* display: none; */
+    width: 1em;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  /* background-color: rgba(148,0,98,1); */
+  background: radial-gradient(circle at top left, rgba(0,0,0,1) 10%, rgba(0,26,88,1) 50%, rgba(148,0,98,1) 80%, rgba(0,122,173,1) 100%);
+  border-radius: 20px;
+  /* border: 1px solid white; */
 }
 
 .sidebar-content {
