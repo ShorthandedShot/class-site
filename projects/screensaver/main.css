@@ -7,21 +7,295 @@ body {
   background: black;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .sky {
   width: 100vw;
   height: 100vw;
   margin: 0 auto;
+  padding: 100px;
   display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-.sea {
+.moon {
+
+}
+
+#shooting-star {
+  width: 50px;
+  height: 50px;
+  animation: nyoom 2s infinite linear;
+
+}
+
+.trail {
+  animation: nyoom 2s infinite linear;
+  width: 20px;
+  height: 1px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  background: transparent;
+}
+
+.trail2 {
+  animation: nyoom2 2s infinite linear;
+  width: 20px;
+  height: 1px;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  background: white;
+}
+
+@keyframes nyoom {
+  0% {
+    transform: translateX(-20vw) translateY(-20vw) rotate(45deg);
+    width: 0px;
+    border: dashed 1px white;
+  }
+
+  20% {
+    transform: translateX(100vw) translateY(100vw) rotate(45deg);
+    width: 800px;
+  }
+
+  100% {
+    transform: translateX(100vw) translateY(100vw) rotate(45deg);
+    width: 800px;
+    border: solid 1px white;
+  }
+}
+
+@keyframes nyoom2 {
+  0% {
+    transform: translateX(-30vw) translateY(-30vw) rotate(45deg);
+    width: 0px;
+    border: dashed 1px white;
+  }
+
+  100% {
+    transform: translateX(300vw) translateY(300vw) rotate(45deg);
+    width: 1000px;
+    border: solid 1px white;
+  }
+}
+
+@keyframes nyoom-test {
+  0% {
+    transform: translateX(-20vw) translateY(-20vw);
+  }
+
+  100% {
+    transform: translateX(150vw) translateY(100vw);
+  }
+}
 
 
+
+.star {
+background: transparent;
+outline: 1px solid white;
+width: 15px;
+height: 15px;
+}
+
+#one {
+  animation: twinkle1 1s infinite alternate;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 8%;
+  left: 10%;
+}
+
+#two {
+  animation: twinkle2 1s infinite alternate;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 25%;
+  left: 45%;
+}
+
+#three {
+  animation: twinkle3 1s infinite alternate;
+  width: 40px;
+  height:40px;
+  position: absolute;
+  top: 12%;
+  left: 60%;
+}
+
+#four {
+  animation: twinkle2 1s infinite alternate;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 5%;
+  left: 90%;
+}
+
+#five {
+  animation: twinkle3 1s infinite alternate;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 36%;
+  left: 20%;
+}
+
+#six {
+  animation: twinkle2 1s infinite alternate;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 16%;
+  left: 30%;
+}
+
+#seven {
+  animation: twinkle1 1s infinite alternate;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 22%;
+  left: 78%;
+}
+
+#eight {
+  animation: twinkle2 1s infinite alternate;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 22%;
+  left: 78%;
+}
+
+#nine {
+  animation: twinkle3 1s infinite alternate;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 57%;
+  left: 8%;
+}
+
+#ten {
+  animation: twinkle1 1s infinite alternate;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 60%;
+  left: 37%;
+}
+
+#eleven {
+  animation: twinkle2 1s infinite alternate;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 44%;
+  left: 53%;
+}
+
+#twelve {
+  animation: twinkle1 1s infinite alternate;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 54%;
+  left: 70%;
+}
+
+#thirteen {
+  animation: twinkle3 1s infinite alternate;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 40%;
+  right: 8%;
+}
+
+#fourteen {
+  animation: twinkle1 1s infinite alternate;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 60%;
+  left: 37%;
+}
+
+#fifteen {
+  animation: twinkle1 1s infinite alternate;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 60%;
+  left: 37%;
+}
+
+#sixteen {
+  animation: twinkle1 1s infinite alternate;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 60%;
+  left: 37%;
 }
 
 @keyframes twinkle1 {
-  0% {opacity: 1;}
-  25% {opacity: 0.5;}
-  50% {opacity: 1;}
-  100% {opacity: 1;}
+  0% {opacity: 1;
+    transform: scale(1);
+  }
+  25% {opacity: 0.8;
+    transform: scale(.9);
+  }
+  50% {opacity: 1;
+    transform: scale(1);
+  }
+  100% {opacity: 1;
+    /* transform: rotate(45deg); */
+  }
+}
+
+@keyframes twinkle2 {
+  0% {opacity: 1;
+    /* transform: rotate(45deg); */
+  }
+  25% {opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {opacity: 0.8;
+    transform: scale(.9);
+  }
+
+  100% {opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes twinkle3 {
+  0% {opacity: 1;
+  transform: scale(1);
+  }
+
+  25% {opacity: 1;
+  /* transform: rotate(45deg); */
+  }
+
+  50% {opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {opacity: 0.8;
+    transform: scale(.9);
+  }
 }
