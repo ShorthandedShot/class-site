@@ -5,6 +5,8 @@
 body {
   margin:0;
   background: black;
+  color: white;
+  font-family: monospace;
 }
 
 body::-webkit-scrollbar {
@@ -13,18 +15,26 @@ body::-webkit-scrollbar {
 
 .sky {
   width: 100vw;
-  height: 100vw;
+  height: 10vw;
   margin: 0 auto;
-  padding: 100px;
+  padding: 20px;
   display: flex;
   justify-content: space-around;
   align-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
+  z-index: -9999;
 }
 
-.moon {
+.small-star {
+  margin: 50px;
+}
 
+.placeholder {
+  width: 100px;
+  height: auto;
+  background: black;
+  margin: 20px;
 }
 
 #shooting-star {
