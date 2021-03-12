@@ -29,6 +29,26 @@ a:hover {
   color: red;
 }
 
+*::-webkit-scrollbar {
+  width: 1em;
+}
+
+*::-webkit-scrollbar-track {
+  display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: black;
+  /* border: 3px solid white; */
+}
+
+*::-webkit-scrollbar-button {
+  display: none;
+}
+
+*::-webkit-scrollbar-corner {
+  display: none;
+}
 
 .container {
   width: 100%;
@@ -134,16 +154,16 @@ a:hover {
   background: white;
   font-family: serif;
   padding: 10px;
-  overflow-y: scroll;
+  overflow: scroll;
 }
 
 .test {
-  display: flex;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
+  /* display: flex; */
+  /* flex-wrap: nowrap; */
   padding: 50px;
-  background: #A0B2A6;
+  background: rgb(255, 78, 78);
+  overflow: scroll;
+  margin: 0 auto;
 }
 
 
