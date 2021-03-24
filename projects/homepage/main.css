@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  font-family: monospace;
+  cursor: crosshair;
+  color: white;
+  background: linear-gradient(120deg, rgba(255,195,195,1) 0%, rgba(255,206,253,1) 30%, rgba(204,195,255,1) 60%, rgba(195,228,255,1) 100%);
+  background-size: 500% 500%;
+  animation: gradient 20s ease infinite;
+}
+
+h1 {
+  font-family: new-spirit, serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: transparent;
+   -webkit-text-stroke: 1px white;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: new-spirit, serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: transparent;
+   -webkit-text-stroke: 1px white;
+  text-transform: uppercase;
+}
+
+
+p {
+  font-family: new-spirit-condensed, serif;
+  font-weight: 400;
+  font-size: 2rem
+}
+
+img {
+  max-width:100%;
+}
+
+#accordion {
+  text-align: center;
+  width: auto;
+  background: transparent;
+  border: 1px solid white;
+}
+
+.container {
+  text-align: center;
+  width: auto;
+  height: 200px;
+  overflow:hidden;
+  padding: 30px;
+  border: 1px dotted white;
+}
+
+#clock {
+  font-family: new-spirit-condensed, serif;
+  font-weight: 600;
+}
+
+::selection {
+  background: white;
+  color: rgba(195,228,255,1);
+}
+
+.marquee {
+  width: 300px; /* the plugin works for responsive layouts so width is not necessary */
+  overflow: hidden;
+  border:1px solid #ccc;
+}
+
+.bg {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(120deg, rgba(255,195,195,1) 0%, rgba(255,206,253,1) 30%, rgba(204,195,255,1) 60%, rgba(195,228,255,1) 100%);;
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+  z-index: -9999;
+}
+
+.time {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-decoration: none;
+}
+
+
+
+@keyframes gradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

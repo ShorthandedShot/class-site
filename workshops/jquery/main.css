@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+}
+
+img {
+  max-width:100%;
+}
+
+.marquee {
+  /* width: 300px; /* the plugin works for responsive layouts so width is not necessary */ */
+  overflow: hidden;
+  /* border:1px solid #ccc; */
+  font-size: 60px;
+}
