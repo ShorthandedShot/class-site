@@ -31,6 +31,12 @@ h2 {
   margin: 10px;
 }
 
+
+#bar-title:hover {
+  color:white;
+  -webkit-text-stroke: none;
+}
+
 #no-outline {
   font-family: new-spirit, serif;
   font-weight: 700;
@@ -142,6 +148,7 @@ button:hover {
   /* cursor: pointer; */
   /* border-bottom: none; */
   background: linear-gradient(120deg, rgba(255,195,195,1) 0%, rgba(255,206,253,1) 30%, rgba(204,195,255,1) 60%, rgba(195,228,255,1) 100%);
+  color:white;
 }
 
 /* Style the collapsible content. Note: hidden by default */
