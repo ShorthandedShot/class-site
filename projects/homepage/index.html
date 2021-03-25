@@ -11,22 +11,45 @@
 
   <body>
 
-    <div id="accordion">
-      <div class="container">
-        <p>it is currently <span id="clock" onload="showTime()"></span></p>
-      </div>
+    <audio id="audio">
+      <source src="audio/pcaeldries-countrysidesummerevening.wav" type="audio/wav">
+      Your browser does not support this audio format.
+    </audio>
 
-        <h3>you have been listening to: </h3>
-        <p> flskdjfslkdfsdlfkjsdflksdjlskd sdkfljsdlkfjsdlkfsdjflksdjfsfsfsdlfkjsdflksdjfklsdjfslkajs;sdlfksdjfl;skjfasl;fkasjfl;ajsf;laskjfsalfjasflkdsjlkasj </p>
-
-      <div class="container">
-        <p>something that made you laugh this week:</p>
-      </div>
+    <div class="container">
+      <h2>it is currently</h2>
+      <span id="clock" onload="showTime()"></span>
+      <br><br>
+      <button type="button" id="buttonz" onclick="toggleSound();">🎵</button>
     </div>
-<!-- testsesesetset -->
+
+    <button type="button" class="collapsible">
+      <h2>things you've been listening to</h2>
+    </button>
+    <div class="content">
+      <p> flskdjfslkdfsdlfkjsdflksdjlskd sdkfljsdlkfjsdlkfsdjflksdjfsfsfsdlfkjsdflksdjfklsdjfslkajs;sdlfksdjfl;skjfasl;fkasjfl;ajsf;laskjfsalfjasflkdsjlkasj </p>
+    </div>
+
+    <button type="button" class="collapsible">
+      <h2>things that made you laugh this week</h2>
+    </button>
+    <div class="content">
+      <p>Lorem ipsum...</p>
+    </div>
+
+    <div class="container">
+    </div>
 
 
-
+    <script>
+    function toggleSound() {
+      var audioElem = document.getElementById('audio');
+      if (audioElem.paused)
+        audioElem.play();
+      else
+        audioElem.pause();
+    }
+    </script>
 
 
     <script src="jquery-3.6.0.min.js"></script>
