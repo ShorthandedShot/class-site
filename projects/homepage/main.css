@@ -28,47 +28,57 @@ h2 {
   color: transparent;
   -webkit-text-stroke: 1px white;
   text-transform: uppercase;
-  margin: 20px;
+  margin: 10px;
 }
 
-h3 {
+#no-outline {
   font-family: new-spirit, serif;
   font-weight: 700;
   font-size: 3rem;
-  color: transparent;
-  -webkit-text-stroke: 1px white;
-  text-transform: uppercase;
+  color:white;
+  -webkit-text-stroke: none;
+
 }
 
 
 p {
   font-family: new-spirit-condensed, serif;
   font-weight: 400;
-  font-size: 2rem
+  font-size: 2rem;
+  margin: 40px 0px;
 }
 
 img {
   max-width:100%;
 }
 
+hr {
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 10px 1px rgba(204,195,255,1);
+}
+hr:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
+
 #buttonz {
   width: fit-content;
   height: auto;
-  padding: 20px 60px;
+  padding: 20px 80px;
   border: 1px dotted white;
   border-radius: 50px;
   color: white;
   background: transparent;
   font-family: new-spirit-condensed, serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1rem;
-  cursor: pointer;
+  margin: 10px 20px;
 }
 
 #buttonz:hover {
   background: linear-gradient(120deg, rgba(255,195,195,1) 0%, rgba(255,206,253,1) 30%, rgba(204,195,255,1) 60%, rgba(195,228,255,1) 100%);
   font-family: new-spirit-condensed, serif;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 #buttonz:focus {
@@ -81,7 +91,7 @@ img {
   width: auto;
   height: fit-content;
   padding: 30px;
-  border: 1px dotted white;
+  /* border: 1px dotted white; */
   overflow-wrap: break-word;
   transition: all 0.6s ease-in-out;
 }
@@ -89,7 +99,7 @@ img {
 #clock {
   font-family: new-spirit-condensed, serif;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 ::selection {
@@ -103,16 +113,10 @@ img {
   border:1px solid #ccc;
 }
 
-/* .bg {
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  background: linear-gradient(120deg, rgba(255,195,195,1) 0%, rgba(255,206,253,1) 30%, rgba(204,195,255,1) 60%, rgba(195,228,255,1) 100%);;
-	background-size: 400% 400%;
-	animation: gradient 20s ease infinite;
-  z-index: -9999;
-} */
+
+button:hover {
+  cursor: pointer;
+}
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
@@ -121,40 +125,41 @@ img {
   text-align: center;
   padding: 20px;
   width: 100%;
-  border-top: 1px dotted white;
+  border: 1px dotted white;
+  /* border-top: 1px dotted white;
   border-bottom: 1px dotted white;
   border-right: none;
-  border-left: none;
+  border-left: none; */
   outline: none;
   font-size: 15px;
+  transition: 1s ease;
 }
+
+
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-  cursor: pointer;
-}
-
-.collapsible:focus {
-  border-bottom: none;
+  /* cursor: pointer; */
+  /* border-bottom: none; */
+  background: linear-gradient(120deg, rgba(255,195,195,1) 0%, rgba(255,206,253,1) 30%, rgba(204,195,255,1) 60%, rgba(195,228,255,1) 100%);
 }
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-  padding: 0 20px;
+  padding: 0 20px 40px 20px;
   display: none;
   overflow: visible;
   overflow-wrap: break-word;
   background-color: transparent;
   text-align: center;
-  border-top: none;
+  /* border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px dotted white;
+  border-bottom: 1px dotted white; */
 
   /* max-height: 0; */
   /* transition: max-height 0.2s ease-out */
 }
-
 
 
 @keyframes gradient {
