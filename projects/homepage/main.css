@@ -92,7 +92,7 @@ hr:after {  /* Not really supposed to work, but does */
   background: linear-gradient(120deg, rgba(255,195,195,1) 0%, rgba(255,206,253,1) 30%, rgba(204,195,255,1) 60%, rgba(195,228,255,1) 100%);
 }
 
-.container {
+.header {
   text-align: center;
   width: auto;
   height: fit-content;
@@ -168,6 +168,16 @@ button:hover {
   /* transition: max-height 0.2s ease-out */
 }
 
+.update {
+  font-family: monospace;
+  font-size: 15px;
+  color: white;
+  margin: 20px 0px 10px;
+  height: 10%;
+  width: 100%;
+  text-decoration: none;
+  font-style: italic;
+}
 
 @keyframes gradient {
     0%{background-position:0% 50%}
