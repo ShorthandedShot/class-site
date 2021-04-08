@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width:100%;
+}
+
+body *,
+html * {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+body {
+  overflow: hidden;
+  cursor: crosshair;
+  margin:0;
+}
+
+audio {
+  /* display: none; */
+}
+
+.marquee {
+  margin-top: 1rem;
+  overflow: hidden;
+  font-size: 75px;
+  font-family: 'Alegreya', serif;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+  filter: blur(7px);
+  color: black;
+  border:1px solid #ccc;
+  opacity: 1.0;
+  transition: opacity .7s ease-in-out;
+  mix-blend-mode: soft-light;
+}
+
+/* .marquee:hover {
+  animation: fadeOut 1s linear;
+  opacity: 0;
+  transition: opacity .55s ease-in-out;
+} */
+
+.marquee2 {
+  margin-top: 1rem;
+  overflow: hidden;
+  font-size: 75px;
+  font-family: 'Alegreya', serif;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+  filter: blur(7px);
+  color: black;
+  /* border:1px solid #ccc; */
+  opacity: 1.0;
+  transition: opacity .6s ease-in-out;
+  mix-blend-mode: soft-light;
+}
+
+.marquee:hover, .marquee2:hover {
+  opacity: 0;
+  transition: opacity .6s ease-in-out;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 1rem;
+  /* transform: rotate(90deg); */
+}
+
+#right {
+  writing-mode: vertical-rl;
+  /* text-orientation: mixed; */
+  z-index: 10000;
+  postion: absolute;
+}
+
+
+/* infinte zoom codepen: https://codepen.io/joseluisq/pen/yYdppZ */
+
+.full {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  z-index: -9999;
+}
+
+.zoom {
+  animation: scale 80s linear infinite;
+}
+
+@keyframes fadeOut {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes scale {
+  50% {
+    transform:scale(1.4);
+  }
+}
