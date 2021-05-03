@@ -16,14 +16,16 @@ body {
 }
 
 .special:hover .secret {
-  display: block;
+  display: flex;
 }
 
 .secret {
-  position: absolute;
+  /* position: absolute;
   width: 400px;
   top: 100px;
-  left: 300px;
+  left: 300px; */
+  justify-content: flex-end;
+  align-items: flex-end;
   display: none
 }
 
