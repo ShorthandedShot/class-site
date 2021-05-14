@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  font-family: 'Kanit', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-size: 5rem;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.8em;
+  -webkit-text-stroke: 1px white;
+  text-stroke: 1px white;
+  color: transparent;
+}
+
+img {
+  /* max-width:100%; */
+}
+
+.container {
+  display: flex;
+  max-width: 80%;
+}
+
+.header {
+  text-align: center;
+}
+
+.operators {
+  margin-top: 50px;
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.op-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 25px;
+  height: 600px;
+  background-color: none;
+  /* font-size: 2rem; */
+}
+
+.op-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  overflow: hidden;
+}
+
+.middle {
+  /* transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  text-align: center; */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  opacity: 0;
+}
+
+
+.op-card:hover .op {
+  opacity: 0.3;
+}
+
+.op-card:hover .middle {
+  opacity: 1;
+}
+
+
+.op {
+  width: 100%;
+  /* max-width: 100%; */
+  /* height: auto; */
+  vertical-align: middle;
+  object-fit: cover;
+  object-position: top;
+  overflow: hidden;
+}
+
+.label {
+  width: 300px;
+  height: 600px;
+  color: black;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 2rem;
+  /* text-align: center; */
+  padding: 25px;
+  /* background-color: white; */
+  color: white;
+  z-index: 99;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.label span {
+  align-self: flex-end;
+}
+
+.label a {
+  text-decoration: none;
+  color: white;
+}
+
+.label img {
+  width: 25%;
+  height: 25%;
+  margin-bottom: -15px;
+  align-self: flex-end;
+}
+
+/* desktop first max width (go smaller further down), mobile first min width (go larger further down) */
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 130%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .op-card {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .op-card {
+    width: 400px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .op-card {
+    width: 250px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
